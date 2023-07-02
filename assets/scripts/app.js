@@ -75,35 +75,72 @@
 
 //SPREAD ...
 
-const array = ['zero', 'one', 'two']
-const array2 = ['three', 'four']
+// const array = ['zero', 'one', 'two']
+// const array2 = ['three', 'four']
+//
+// const joinedArray = [array, array2]
+// console.log(joinedArray)
+// const joinedArray2 = [...array, ...array2]
+// console.log(joinedArray2)
+//
+// const obj = {
+//     zero: 'zero',
+//     one: 'one'
+// }
+//
+// const extendedObj = {
+//     ...obj,
+//     two: 'two'
+// }
+// console.log(extendedObj)
+//
+// const extendedObj2 = {
+//     two: 'two',
+//     ...obj
+// }
+// console.log(extendedObj2)
 
-const joinedArray = [array, array2]
-console.log(joinedArray)
-const joinedArray2 = [...array, ...array2]
-console.log(joinedArray2)
-
-const obj = {
-    zero: 'zero',
-    one: 'one'
+//FUNCTIONS
+function greeting (){
+    console.log('Hello')
 }
 
-const extendedObj = {
-    ...obj,
-    two: 'two'
+setTimeout(greeting, 2000)
+
+const superGreeting = () => console.log('Hey, how are you doing!')
+
+superGreeting()
+
+function greet(otherFunc){
+    otherFunc();
 }
-console.log(extendedObj)
 
-const extendedObj2 = {
-    two: 'two',
-    ...obj
+function greetDelay(otherFunc){
+    setTimeout(otherFunc, 4000)
 }
-console.log(extendedObj2)
+
+greet(() => console.log('Hey!'))
+greetDelay(() => console.log('Helloooo!'))
+
+function privateGreeting(){
+    function internalGreet(){
+        console.log('Hello from internal!')
+    }
+
+    internalGreet()
+}
+
+privateGreeting()
 
 
+function familyGreet(familyName){
+    return (name) => console.log('hello '+ name + ' ' + familyName)
+}
 
+const familyFunc = familyGreet('Brin')
 
-
+familyFunc('Sergey')
+familyFunc('Oleg')
 
 
 
