@@ -28,23 +28,52 @@
 //
 // arrowFunc()
 
-const array = ['zero', 'one', 'two']
-array.push('three')
 
-console.log(array)
+//ARRAY
+// const array = ['zero', 'one', 'two']
+// array.push('three')
+//
+// console.log(array)
+//
+// const index = array.findIndex((item) => item === 'two')
+//
+// console.log(index)
+//
+// const newArray = array.map((item, i) => item + ' - ' + i)
+//
+// console.log(newArray)
+// console.log(array)// <- not edited!
+//
+// const jsonArray = array.map(item => ({number: item}))
+//
+// console.log(jsonArray)
 
-const index = array.findIndex((item) => item === 'two')
+//DESTRUCTOR
+// const array = ['zero', 'one', 'two']
+//
+// const [zeroNumber, oneNumber, threeNumber] = ['zero', 'one', 'two']
+//
+// console.log(zeroNumber)
+// console.log(oneNumber)
+// console.log(threeNumber)
 
-console.log(index)
+const objArray = {
+    zero: 'zero',
+    two: 'two'
+}
 
-const newArray = array.map((item, i) => item + ' - ' + i)
+const zeroNumber = objArray.zero
+const twoNumber = objArray.two
 
-console.log(newArray)
-console.log(array)// <- not edited!
+console.log(zeroNumber)
+console.log(twoNumber)
 
-const jsonArray = array.map(item => ({number: item}))
+const {zero, two} = objArray
 
-console.log(jsonArray)
+console.log(zero)
+console.log(two)
+
+
 
 
 
