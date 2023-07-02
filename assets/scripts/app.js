@@ -57,21 +57,52 @@
 // console.log(oneNumber)
 // console.log(threeNumber)
 
-const objArray = {
+// const objArray = {
+//     zero: 'zero',
+//     two: 'two'
+// }
+//
+// const zeroNumber = objArray.zero
+// const twoNumber = objArray.two
+//
+// console.log(zeroNumber)
+// console.log(twoNumber)
+//
+// const {zero, two} = objArray
+//
+// console.log(zero)
+// console.log(two)
+
+//SPREAD ...
+
+const array = ['zero', 'one', 'two']
+const array2 = ['three', 'four']
+
+const joinedArray = [array, array2]
+console.log(joinedArray)
+const joinedArray2 = [...array, ...array2]
+console.log(joinedArray2)
+
+const obj = {
     zero: 'zero',
-    two: 'two'
+    one: 'one'
 }
 
-const zeroNumber = objArray.zero
-const twoNumber = objArray.two
+const extendedObj = {
+    ...obj,
+    two: 'two'
+}
+console.log(extendedObj)
 
-console.log(zeroNumber)
-console.log(twoNumber)
+const extendedObj2 = {
+    two: 'two',
+    ...obj
+}
+console.log(extendedObj2)
 
-const {zero, two} = objArray
 
-console.log(zero)
-console.log(two)
+
+
 
 
 
