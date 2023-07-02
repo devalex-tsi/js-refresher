@@ -21,11 +21,32 @@
 
 //arrow functions
 
-const arrowFunc = () => {
-    console.log('works')
-}
-const arrowFunc2 = () => console.log('works')
+// const arrowFunc = () => {
+//     console.log('works')
+// }
+// const arrowFunc2 = () => console.log('works')
+//
+// arrowFunc()
 
-arrowFunc()
+const array = ['zero', 'one', 'two']
+array.push('three')
+
+console.log(array)
+
+const index = array.findIndex((item) => item === 'two')
+
+console.log(index)
+
+const newArray = array.map((item, i) => item + ' - ' + i)
+
+console.log(newArray)
+console.log(array)// <- not edited!
+
+const jsonArray = array.map(item => ({number: item}))
+
+console.log(jsonArray)
+
+
+
 
 
