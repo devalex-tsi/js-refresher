@@ -101,48 +101,55 @@
 // console.log(extendedObj2)
 
 //FUNCTIONS
-function greeting (){
-    console.log('Hello')
-}
+// function greeting (){
+//     console.log('Hello')
+// }
+//
+// setTimeout(greeting, 2000)
+//
+// const superGreeting = () => console.log('Hey, how are you doing!')
+//
+// superGreeting()
+//
+// function greet(otherFunc){
+//     otherFunc();
+// }
+//
+// function greetDelay(otherFunc){
+//     setTimeout(otherFunc, 4000)
+// }
+//
+// greet(() => console.log('Hey!'))
+// greetDelay(() => console.log('Helloooo!'))
+//
+// function privateGreeting(){
+//     function internalGreet(){
+//         console.log('Hello from internal!')
+//     }
+//
+//     internalGreet()
+// }
+//
+// privateGreeting()
+//
+//
+// function familyGreet(familyName){
+//     return (name) => console.log('hello '+ name + ' ' + familyName)
+// }
+//
+// const familyFunc = familyGreet('Brin')
+//
+// familyFunc('Sergey')
+// familyFunc('Oleg')
 
-setTimeout(greeting, 2000)
-
-const superGreeting = () => console.log('Hey, how are you doing!')
-
-superGreeting()
-
-function greet(otherFunc){
-    otherFunc();
-}
-
-function greetDelay(otherFunc){
-    setTimeout(otherFunc, 4000)
-}
-
-greet(() => console.log('Hey!'))
-greetDelay(() => console.log('Helloooo!'))
-
-function privateGreeting(){
-    function internalGreet(){
-        console.log('Hello from internal!')
-    }
-
-    internalGreet()
-}
-
-privateGreeting()
-
-
-function familyGreet(familyName){
-    return (name) => console.log('hello '+ name + ' ' + familyName)
-}
-
-const familyFunc = familyGreet('Brin')
-
-familyFunc('Sergey')
-familyFunc('Oleg')
-
-
+    // map()  => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+    // find()  => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
+    // findIndex()  => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex
+    // filter()  => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+    // reduce()  => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce?v=b
+    // concat()  => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat?v=b
+    // slice()  => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
+    // splice()  => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
 
 
 
