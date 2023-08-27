@@ -50,7 +50,7 @@ ul {
   text-align: center;
 }
 
-li {
+li, a {
   margin: 0.5rem 0;
   color: #e9e2ba;
 }
