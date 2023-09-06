@@ -47,3 +47,67 @@ console.log(mammals1.mammalsSubClass)
 Animal.info()
 
 mammals1.publicMethod()
+
+//Classes
+console.log('---CLASSES---')
+
+class Vehicle {
+    static fuel = 'gas'
+
+    constructor(wheelCount, vehicleType, tankVolume) {
+        this.wheelCount = wheelCount
+        this.vehicleType = vehicleType
+        this.tankVolume = tankVolume
+    }
+
+    driving() {
+        console.log(`${this.vehicleType} is driving via ${this.wheelCount} wheels`)
+    }
+
+    get vehicleTypeUpper() {
+        console.log(this.vehicleType.toUpperCase())
+        return this.vehicleType.toUpperCase()
+    }
+
+    set tank(volume) {
+        this.tankVolume = volume
+        console.log('Tank volume set to ' + volume)
+    }
+}
+
+const car = new Vehicle(4, 'Car', 50)
+
+console.log(car)
+car.driving()
+
+car.vehicleTypeUpper
+car.tank = 40
+
+console.log(Vehicle.fuel)
+
+class Truck extends Vehicle {
+    static fuel = 'DIESEL'
+
+    constructor(wheelCount, vehicleType, tankVolume, truckType) {
+        super(wheelCount, vehicleType, tankVolume);
+        this.truckType = truckType
+    }
+
+    driving() {
+        super.driving()
+        console.log('Truck Driving!!!')
+    }
+
+    automaticUnloading() {
+        console.log('Truck was unloaded')
+    }
+}
+
+const truck = new Truck(10, 'Truck', 1000, 'road train')
+console.log(truck)
+truck.driving()
+
+truck.vehicleTypeUpper
+
+truck.automaticUnloading()
+console.log(Truck.fuel)
