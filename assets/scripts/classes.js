@@ -5,10 +5,6 @@ function Animal(type, age) {
 
     //the dominant property is the property described inside the type
     this.mammalsSubClass = 'warm-blooded'
-
-    this.ageInfo = function (){
-        console.log(this.age)
-    }
 }
 
 const mammals1 = new Animal('mammals', 5)
@@ -17,6 +13,10 @@ console.log(mammals1)
 
 Animal.prototype.eat = function () {
     console.log(`${this.type} animal is eating`)
+}
+
+Animal.prototype.ageInfo = function (){
+    console.log(this.age)
 }
 
 Animal.prototype.mammalsSubClass = 'vertebrate animals'
