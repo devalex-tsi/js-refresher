@@ -5,6 +5,14 @@ function Animal(type, age) {
 
     //the dominant property is the property described inside the type
     this.mammalsSubClass = 'warm-blooded'
+
+    const privateMethod = function () {
+        console.log('This is private method! Can call only inside.')
+    }
+
+    this.publicMethod = function () {
+        privateMethod()
+    }
 }
 
 const mammals1 = new Animal('mammals', 5)
@@ -15,13 +23,13 @@ Animal.prototype.eat = function () {
     console.log(`${this.type} animal is eating`)
 }
 
-Animal.prototype.ageInfo = function (){
+Animal.prototype.ageInfo = function () {
     console.log(this.age)
 }
 
 Animal.prototype.mammalsSubClass = 'vertebrate animals'
 
-Animal.info = function (){
+Animal.info = function () {
     console.log('This is animal type')
 }
 
@@ -37,3 +45,5 @@ console.log(mammals1.eat === mammals2.eat)
 console.log(mammals1.mammalsSubClass)
 
 Animal.info()
+
+mammals1.publicMethod()
