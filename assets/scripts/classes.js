@@ -21,6 +21,10 @@ Animal.prototype.eat = function () {
 
 Animal.prototype.mammalsSubClass = 'vertebrate animals'
 
+Animal.info = function (){
+    console.log('This is animal type')
+}
+
 mammals1.eat()
 mammals2.eat()
 
@@ -31,3 +35,5 @@ console.log(mammals1.eat === mammals2.eat)
 
 //!the dominant property is the property described inside the type
 console.log(mammals1.mammalsSubClass)
+
+Animal.info()
